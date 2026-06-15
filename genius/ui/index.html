@@ -3150,7 +3150,7 @@
       studentCount: 32,
       schoolName: 'Govt Sr Sec School, Haryana',
       timerDuration: 30, // seconds
-      apiUrl: 'http://localhost:8000',
+      apiUrl: 'https://genius-backend-nr73.onrender.com',
       
       // Session tracking
       sessionStartTime: Date.now(),
@@ -3207,7 +3207,7 @@
       localStorage.setItem('vg_students', state.studentCount);
       localStorage.setItem('vg_school', state.schoolName);
       localStorage.setItem('vg_quizTimer', state.timerDuration);
-      localStorage.setItem('vg_apiUrl', state.apiUrl || 'http://localhost:8000');
+      localStorage.setItem('vg_apiUrl', state.apiUrl || 'https://genius-backend-nr73.onrender.com');
     }
 
     // Update global UI labels
@@ -4614,7 +4614,7 @@
       document.getElementById('sett-students').value = state.studentCount;
       document.getElementById('sett-school').value = state.schoolName;
       document.getElementById('sett-quiz-timer').value = state.timerDuration;
-      document.getElementById('sett-api-url').value = state.apiUrl || 'http://localhost:8000';
+      document.getElementById('sett-api-url').value = state.apiUrl || 'https://genius-backend-nr73.onrender.com';
       
       // Update speed sliders
       document.getElementById('sett-voice-speed').value = 1.0;
@@ -4699,7 +4699,7 @@
       state.studentCount = parseInt(document.getElementById('sett-students').value) || 32;
       state.schoolName = document.getElementById('sett-school').value;
       state.timerDuration = parseInt(document.getElementById('sett-quiz-timer').value) || 30;
-      state.apiUrl = document.getElementById('sett-api-url').value.trim() || 'http://localhost:8000';
+      state.apiUrl = document.getElementById('sett-api-url').value.trim() || 'https://genius-backend-nr73.onrender.com';
       
       saveSettingsToStorage();
       updateUIWithState();
