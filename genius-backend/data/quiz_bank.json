@@ -1,0 +1,232 @@
+{
+  "photosynthesis": [
+    {
+      "q_en": "Q1. Photosynthesis process mein main food/energy product kya banta hai?",
+      "q_hi": "Q1. प्रकाश संश्लेषण की प्रक्रिया में मुख्य भोजन/ऊर्जा उत्पाद क्या बनता है?",
+      "options": {
+        "A": "Carbon Dioxide (CO₂)",
+        "B": "Glucose (C₆H₁₂O₆)",
+        "C": "Water (H₂O)",
+        "D": "Nitrogen"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q2. Plants solar energy ko trap karne ke liye kis green pigment ka use karte hain?",
+      "q_hi": "Q2. पौधे सौर ऊर्जा को अवशोषित करने के लिए किस हरे वर्णक का उपयोग करते हैं?",
+      "options": {
+        "A": "Hemoglobin",
+        "B": "Chlorophyll",
+        "C": "Melanin",
+        "D": "Carotene"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q3. Photosynthesis mein leaves air se kaun si gas absorb karti hain?",
+      "q_hi": "Q3. प्रकाश संश्लेषण में पत्तियां हवा से कौन सी गैस अवशोषित करती हैं?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon Dioxide (CO₂)",
+        "D": "Helium"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q4. Photosynthesis cell ke andar kis organelle mein perform hota hai?",
+      "q_hi": "Q4. प्रकाश संश्लेषण कोशिका के किस अंग (organelle) में होता है?",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Nucleus",
+        "C": "Chloroplast",
+        "D": "Lysosome"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q5. Plants ko water aur minerals kis organ ke throw milte hain?",
+      "q_hi": "Q5. पौधों को पानी और खनिज किस अंग के माध्यम से प्राप्त होते हैं?",
+      "options": {
+        "A": "Leaves (पत्तियां)",
+        "B": "Stems (तना)",
+        "C": "Roots (जड़ें)",
+        "D": "Flowers (फूल)"
+      },
+      "correct": "C"
+    }
+  ],
+  "atomic structure": [
+    {
+      "q_en": "Q1. Atom ke center nucleus mein kaun se positive particles hote hain?",
+      "q_hi": "Q1. परमाणु के केंद्रीय नाभिक में कौन से धनावेशित कण होते हैं?",
+      "options": {
+        "A": "Electrons",
+        "B": "Protons",
+        "C": "Neutrons",
+        "D": "Photons"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q2. Orbit shells mein Nucleus ke charo taraf chakkar kaatne waale negative particles kya hain?",
+      "q_hi": "Q2. नाभिक के चारों ओर कक्षाओं में चक्कर लगाने वाले ऋणावेशित कण क्या हैं?",
+      "options": {
+        "A": "Protons",
+        "B": "Neutrons",
+        "C": "Electrons",
+        "D": "Positrons"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q3. Niels Bohr atomic model ke mutabik first shell (K Shell) mein maximum kitne electrons ho sakte hain?",
+      "q_hi": "Q3. नील बोर मॉडल के अनुसार पहली कक्षा (K Shell) में अधिकतम कितने इलेक्ट्रॉन हो सकते हैं?",
+      "options": {
+        "A": "8 electrons",
+        "B": "2 electrons",
+        "C": "18 electrons",
+        "D": "4 electrons"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q4. Nucleus ke andar neutral particle (Neutron) ki khoj kisne ki thi?",
+      "q_hi": "Q4. नाभिक के अंदर उदासीन कण (न्यूट्रॉन) की खोज किसने की थी?",
+      "options": {
+        "A": "J.J. Thomson",
+        "B": "Rutherford",
+        "C": "James Chadwick",
+        "D": "Niels Bohr"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q5. J.J. Thomson ne atom ke tarbooz model (Plum Pudding Model) mein negative particles ko kya mana tha?",
+      "q_hi": "Q5. जे.जे. थॉमसन ने परमाणु के प्लम पुडिंग मॉडल में ऋणात्मक कणों को क्या माना था?",
+      "options": {
+        "A": "Red edible part (लाल गूदा)",
+        "B": "Watermelon Seeds (तरबूज के बीज)",
+        "C": "Outer shell (बाहरी छिलका)",
+        "D": "Air spaces"
+      },
+      "correct": "B"
+    }
+  ],
+  "dna": [
+    {
+      "q_en": "Q1. DNA ka full form kya hota hai?",
+      "q_hi": "Q1. डीएनए (DNA) का पूर्ण रूप क्या होता है?",
+      "options": {
+        "A": "Deoxynucleic Acid",
+        "B": "Deoxyribonucleic Acid",
+        "C": "Diribonucleic Acid",
+        "D": "Decarbonucleic Acid"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q2. DNA ladder ke nucleotides mein Adenine (A) base hamesha kiske sath pair banata hai?",
+      "q_hi": "Q2. डीएनए सीढ़ी में एडेनिन (A) हमेशा किसके साथ पूरक जोड़ी बनाता है?",
+      "options": {
+        "A": "Guanine (G)",
+        "B": "Thymine (T)",
+        "C": "Cytosine (C)",
+        "D": "Uracil (U)"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q3. Watson aur Crick ne DNA ka kaun sa structural representation discover kiya tha?",
+      "q_hi": "Q3. वाटसन और क्रिक ने डीएनए का कौन सा संरचनात्मक प्रतिनिधित्व खोजा था?",
+      "options": {
+        "A": "Single Strand",
+        "B": "Triple Helix",
+        "C": "Double Helix (द्वि-कुंडलित)",
+        "D": "Circular Ring"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q4. Cellular DNA nucleus ke andar kis specific structure mein tightly winded hota hai?",
+      "q_hi": "Q4. सेल्युलर डीएनए नाभिक के अंदर किस संरचना में कसकर लपेटा हुआ होता है?",
+      "options": {
+        "A": "Ribosomes",
+        "B": "Chromosomes (गुणसूत्र)",
+        "C": "Lysosomes",
+        "D": "Cytoplasm"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q5. Nucleotide base pairs ko aapas mein bind karne waale chemical bond ko kya bolte hain?",
+      "q_hi": "Q5. क्षारक जोड़ों को आपस में बांधने वाले रासायनिक बंध को क्या कहते हैं?",
+      "options": {
+        "A": "Ionic Bond",
+        "B": "Covalent Bond",
+        "C": "Hydrogen Bond (हाइड्रोजन बंध)",
+        "D": "Metallic Bond"
+      },
+      "correct": "C"
+    }
+  ],
+  "states of matter": [
+    {
+      "q_en": "Q1. Matter ki kis avastha (state) mein volume aur shape dono fixed hote hain?",
+      "q_hi": "Q1. पदार्थ की किस अवस्था में आकार और आयतन दोनों निश्चित होते हैं?",
+      "options": {
+        "A": "Liquid (द्रव)",
+        "B": "Gas (गैस)",
+        "C": "Solid (ठोस)",
+        "D": "Plasma"
+      },
+      "correct": "C"
+    },
+    {
+      "q_en": "Q2. Solid state se directly Gas state mein change hone ke process ko kya kehte hain?",
+      "q_hi": "Q2. ठोस अवस्था से सीधे गैस अवस्था में परिवर्तन की प्रक्रिया को क्या कहते हैं?",
+      "options": {
+        "A": "Evaporation",
+        "B": "Sublimation (उर्ध्वपातन)",
+        "C": "Condensation",
+        "D": "Melting"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q3. Matter ki kis state mein particles ke beech attraction force sabse kam (weakest) hota hai?",
+      "q_hi": "Q3. पदार्थ की किस अवस्था में कणों के बीच आकर्षण बल सबसे कम होता है?",
+      "options": {
+        "A": "Solid",
+        "B": "Liquid",
+        "C": "Gas",
+        "D": "None"
+      },
+      "correct": "C"
+    }
+  ],
+  "current electricity": [
+    {
+      "q_en": "Q1. Ohm's Law ke according, constant temperature par voltage (V) aur current (I) ka relation kya hai?",
+      "q_hi": "Q1. ओम के नियम के अनुसार, स्थिर ताप पर वोल्टेज (V) और धारा (I) का संबंध क्या है?",
+      "options": {
+        "A": "V = I / R",
+        "B": "V = I × R",
+        "C": "I = V × R",
+        "D": "R = V × I"
+      },
+      "correct": "B"
+    },
+    {
+      "q_en": "Q2. Electric Current ko measure karne waale instrument ko kya kehte hain?",
+      "q_hi": "Q2. विद्युत धारा को मापने वाले यंत्र को क्या कहते हैं?",
+      "options": {
+        "A": "Voltmeter",
+        "B": "Galvanometer",
+        "C": "Ammeter (अमीटर)",
+        "D": "Ohmeter"
+      },
+      "correct": "C"
+    }
+  ]
+}

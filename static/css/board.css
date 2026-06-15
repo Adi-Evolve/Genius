@@ -1,0 +1,281 @@
+/* Slate Green Chalkboard Styles */
+
+.board-container, .st-key-board_container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-board-green);
+  /* Fallback gradients + actual blackboard texture image */
+  background: 
+    radial-gradient(circle, rgba(42,92,27,0.4) 0%, rgba(26,48,14,0.7) 100%),
+    url('../assets/board_texture.jpg');
+  background-size: 512px 512px;
+  padding: var(--board-padding);
+  box-sizing: border-box;
+  color: var(--color-chalk-white);
+  position: relative;
+  box-shadow: var(--shadow-board-depth);
+  overflow-y: auto;
+}
+
+/* Chalk grid lines overlay (like a geometry graph board) */
+.board-grid-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(var(--color-board-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-board-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main Chalk Board Wrapper */
+.board-content, .st-key-board_content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Board Header Bar */
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-chalk);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.board-title {
+  font-family: var(--font-board-handwriting);
+  font-size: var(--fs-board-xl);
+  color: var(--color-chalk-yellow);
+  text-shadow: var(--shadow-yellow-glow);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.board-subtitle-hindi {
+  font-family: var(--font-board-hindi);
+  font-size: 1.5rem;
+  color: var(--color-chalk-white);
+  margin-top: 0.25rem;
+  opacity: 0.9;
+}
+
+/* Mode Badges */
+.board-badges {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.mode-badge {
+  font-family: var(--font-ui-label);
+  font-size: 0.9rem;
+  color: var(--color-chalk-yellow);
+  border: 1.5px dashed var(--color-chalk-yellow);
+  padding: 2px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: rgba(245, 230, 66, 0.05);
+}
+
+.ncert-ref-badge {
+  font-family: var(--font-ui-label);
+  font-size: 0.9rem;
+  color: var(--color-chalk-blue);
+  border: 1.5px dashed var(--color-chalk-blue);
+  padding: 2px 10px;
+  border-radius: 4px;
+  background: rgba(155, 202, 232, 0.05);
+}
+
+/* Visual Panel (where 3D scenes or simulations are displayed) */
+.board-visual-panel, .st-key-board_visual_panel {
+  width: 100%;
+  min-height: 380px;
+  background: rgba(20, 38, 11, 0.6);
+  border: 2px dashed rgba(245, 242, 232, 0.3);
+  position: relative;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--border-radius-md);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Hand-drawn corner markings on Visual Panel */
+.board-visual-panel::before, .st-key-board_visual_panel::before {
+  content: '';
+  position: absolute;
+  top: 10px; left: 10px;
+  width: 20px; height: 20px;
+  border-top: 2px solid rgba(245, 242, 232, 0.6);
+  border-left: 2px solid rgba(245, 242, 232, 0.6);
+}
+
+.board-visual-panel::after, .st-key-board_visual_panel::after {
+  content: '';
+  position: absolute;
+  bottom: 10px; right: 10px;
+  width: 20px; height: 20px;
+  border-bottom: 2px solid rgba(245, 242, 232, 0.6);
+  border-right: 2px solid rgba(245, 242, 232, 0.6);
+}
+
+/* Concept Explanation Section */
+.board-explanation-panel, .st-key-board_explanation_panel {
+  background: rgba(245, 242, 232, 0.02);
+  border: var(--border-chalk);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-card-glow);
+}
+
+.chalk-text {
+  font-family: var(--font-board-handwriting);
+  font-size: 2.1rem;
+  color: var(--color-chalk-white);
+  line-height: 1.6;
+  text-shadow: var(--shadow-chalk-glow);
+  white-space: pre-wrap;
+}
+
+.chalk-text-hindi {
+  font-family: var(--font-board-hindi);
+  font-size: 1.8rem;
+  color: var(--color-chalk-cream);
+  line-height: 1.8;
+  margin-top: 1rem;
+  border-top: 1px dashed rgba(245, 242, 232, 0.15);
+  padding-top: 1rem;
+}
+
+/* Key Terms Box */
+.key-terms-box, .st-key-key_terms_box {
+  border: 2px solid var(--color-chalk-yellow);
+  background: rgba(245, 230, 66, 0.05);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  position: relative;
+  border-radius: var(--border-radius-sm);
+}
+
+.key-terms-title {
+  position: absolute;
+  top: -12px; left: 15px;
+  background-color: #265118; /* Solid green matching board */
+  padding: 0 8px;
+  font-family: var(--font-ui-label);
+  font-size: 0.95rem;
+  color: var(--color-chalk-yellow);
+  letter-spacing: 0.05em;
+}
+
+.key-terms-list, .st-key-key_terms_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.key-term-chip {
+  display: inline-block;
+  border: 1.5px solid var(--color-chalk-yellow);
+  color: var(--color-chalk-yellow);
+  font-family: var(--font-ui-label);
+  font-size: 1.05rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  transition: all var(--transition-fast);
+}
+
+.key-term-chip:hover {
+  background: rgba(245, 230, 66, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Fixed Bottom Voice Command Bar */
+.voice-command-bar, .st-key-voice_command_bar {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(20, 38, 11, 0.85);
+  border: var(--border-chalk-solid);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.mic-circle-btn {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-wood-medium);
+  border: 2px solid var(--color-chalk-white);
+  color: var(--color-chalk-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.mic-circle-btn:hover {
+  background-color: var(--color-wood-light);
+  transform: scale(1.05);
+}
+
+.mic-circle-btn.recording {
+  background-color: var(--color-speak-red);
+  border-color: var(--color-chalk-white);
+  animation: pulse-recording 1.2s infinite alternate;
+}
+
+/* Text Command Input inside bar */
+.chalk-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.chalk-text-input {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px dashed rgba(245, 242, 232, 0.4) !important;
+  color: var(--color-chalk-white) !important;
+  font-family: var(--font-board-handwriting) !important;
+  font-size: 1.6rem !important;
+  padding: 0.5rem 0.25rem !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.chalk-text-input:focus {
+  border-bottom-color: var(--color-chalk-yellow) !important;
+}
+
+.chalk-input-submit {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--color-chalk-white);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.chalk-input-submit:hover {
+  color: var(--color-chalk-yellow);
+}

@@ -1,0 +1,110 @@
+/* Dictation & Translation Mode Styles */
+
+.dictation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.dictation-panels-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .dictation-panels-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual Translation Board Panel */
+.dictation-board-panel {
+  border: var(--border-chalk);
+  background: rgba(245, 242, 232, 0.01);
+  padding: 1.25rem;
+  min-height: 250px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-card-glow);
+  position: relative;
+}
+
+.dictation-board-panel::before {
+  content: attr(data-language);
+  position: absolute;
+  top: -11px; left: 15px;
+  background-color: var(--color-board-green);
+  padding: 0 6px;
+  font-family: var(--font-ui-label);
+  font-size: 0.85rem;
+  color: var(--color-chalk-orange);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Compare and correction styling */
+.correction-diff-box {
+  margin-top: 1rem;
+  font-family: var(--font-board-handwriting);
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: var(--color-chalk-white);
+  padding: 1rem;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.15);
+  border: 1px dashed rgba(245,242,232,0.1);
+}
+
+/* Dictation Diff Highlights */
+.diff-correct {
+  color: var(--color-chalk-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.diff-wrong {
+  color: var(--color-speak-red);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+.diff-missing {
+  color: var(--color-chalk-yellow);
+  border-bottom: 2px dotted var(--color-chalk-yellow);
+  padding-bottom: 2px;
+}
+
+/* Control buttons inside dictation mode */
+.dictation-controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.dictation-btn {
+  background: rgba(245, 242, 232, 0.05);
+  border: 2px dashed var(--color-chalk-white);
+  color: var(--color-chalk-white);
+  font-family: var(--font-ui-label);
+  font-size: 1.1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.dictation-btn:hover {
+  background: rgba(245, 242, 232, 0.12);
+  border-color: var(--color-chalk-yellow);
+  color: var(--color-chalk-yellow);
+}
+
+.dictation-btn.active {
+  background: rgba(232, 80, 74, 0.1);
+  border-color: var(--color-speak-red);
+  color: var(--color-speak-red);
+}

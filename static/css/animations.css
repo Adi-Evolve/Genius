@@ -1,0 +1,155 @@
+/* Classroom-Native Animation Definitions */
+
+/* 1. Chalk Word-by-Word appearance */
+.chalk-word {
+  display: inline-block;
+  opacity: 0;
+  animation: chalk-write-in 0.15s forwards ease-out;
+}
+
+@keyframes chalk-write-in {
+  from {
+    opacity: 0;
+    filter: blur(1.5px);
+    transform: translateY(2px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 2. Board Erase Sweep (Wipe transitions) */
+.board-erase-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.board-erase-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(245, 242, 232, 0.1) 40%,
+    rgba(245, 242, 232, 0.4) 60%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: erase-swipe 0.75s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes erase-swipe {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* 3. Mic Recording Pulses */
+@keyframes pulse-recording {
+  0% {
+    box-shadow: 0 0 0 0 rgba(232, 80, 74, 0.4), 0 0 0 4px rgba(232, 80, 74, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(232, 80, 74, 0), 0 0 0 24px rgba(232, 80, 74, 0);
+  }
+}
+
+.mic-pulse-ring {
+  animation: pulse-recording 1.5s infinite ease-out;
+}
+
+/* 4. Correct Answer Glow Pulse */
+@keyframes correct-glow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(95, 203, 106, 0.8);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(95, 203, 106, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(95, 203, 106, 0.2);
+  }
+}
+
+/* 5. Wrong Answer Shake */
+@keyframes shake-error {
+  0%, 100% { transform: translateX(0); }
+  15%, 45%, 75% { transform: translateX(-8px); }
+  30%, 60%, 90% { transform: translateX(8px); }
+}
+
+/* 6. Soundwave Speaking Bar Heights */
+.wave-bar {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: var(--color-chalk-white);
+  border-radius: 2px;
+  margin: 0 2px;
+  animation: bounce-wave 0.8s ease-in-out infinite alternate;
+}
+
+.wave-bar:nth-child(2) { animation-delay: 0.15s; }
+.wave-bar:nth-child(3) { animation-delay: 0.3s; }
+.wave-bar:nth-child(4) { animation-delay: 0.45s; }
+.wave-bar:nth-child(5) { animation-delay: 0.6s; }
+
+@keyframes bounce-wave {
+  0% { height: 4px; transform: scaleY(0.2); }
+  100% { height: 28px; transform: scaleY(1.2); }
+}
+
+/* 7. Quiz Timer Urgency Flash */
+@keyframes timer-flash {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 8px rgba(232, 80, 74, 0.5);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(232, 80, 74, 0.8);
+  }
+}
+
+/* 8. Slide Up Panels */
+.slide-up-panel {
+  animation: slide-up-animation 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes slide-up-animation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 9. Floating Chalk Dust (Particles) */
+@keyframes float-dust-up {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--dust-opacity, 0.5);
+  }
+  85% {
+    opacity: var(--dust-opacity, 0.5);
+  }
+  100% {
+    transform: translateY(-150px) translateX(var(--dust-drift, 20px)) rotate(360deg);
+    opacity: 0;
+  }
+}

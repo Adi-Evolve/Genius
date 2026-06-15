@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#F5E642"
+backgroundColor = "#2A5C1B"
+secondaryBackgroundColor = "#6B4226"
+textColor = "#F5F2E8"
+font = "serif"
+
+[server]
+runOnSave = true
+fileWatcherType = "watchdog"
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 50

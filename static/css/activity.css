@@ -1,0 +1,148 @@
+/* Hands-Free Activity Guide Styles */
+
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.activity-header {
+  border-bottom: 2px dashed rgba(245, 242, 232, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.activity-title {
+  font-family: var(--font-board-handwriting);
+  font-size: 2.4rem;
+  color: var(--color-chalk-orange);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 179, 71, 0.3);
+}
+
+/* Steps list */
+.activity-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.activity-step-card {
+  border: var(--border-chalk);
+  background: rgba(245, 242, 232, 0.01);
+  padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+  border-radius: 4px;
+  position: relative;
+  transition: all var(--transition-medium);
+  box-shadow: var(--shadow-card-glow);
+}
+
+/* Giant hand-drawn number in the left corner */
+.activity-step-card::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--font-board-handwriting);
+  font-size: 2.5rem;
+  color: var(--color-chalk-yellow);
+  line-height: 1;
+}
+
+.activity-step-content {
+  font-family: var(--font-board-handwriting);
+  font-size: 1.9rem;
+  color: var(--color-chalk-white);
+  line-height: 1.5;
+  text-shadow: var(--shadow-chalk-glow);
+}
+
+.activity-step-hint {
+  font-family: var(--font-board-hindi);
+  font-size: 1.5rem;
+  color: var(--color-chalk-blue);
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+/* State: Active Step Highlight */
+.activity-step-card.active {
+  border-color: var(--color-chalk-yellow);
+  background: rgba(245, 230, 66, 0.04);
+  box-shadow: var(--shadow-yellow-glow);
+  transform: scale(1.01);
+}
+
+.activity-step-card.active::before {
+  color: var(--color-chalk-yellow);
+  animation: pulse-step-num 1.5s infinite alternate;
+}
+
+@keyframes pulse-step-num {
+  from { transform: scale(1); filter: drop-shadow(0 0 2px var(--color-chalk-yellow)); }
+  to { transform: scale(1.1); filter: drop-shadow(0 0 8px var(--color-chalk-yellow)); }
+}
+
+/* State: Completed Step */
+.activity-step-card.completed {
+  border-color: rgba(95, 203, 106, 0.4);
+  background: rgba(95, 203, 106, 0.02);
+  opacity: 0.6;
+}
+
+.activity-step-card.completed::before {
+  content: '✓';
+  color: var(--color-chalk-green);
+  font-size: 2.2rem;
+  top: 15px; left: 15px;
+}
+
+/* Action Task Cards */
+.activity-tasks-split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .activity-tasks-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.activity-tools-box {
+  border: 2px solid var(--color-chalk-blue);
+  background: rgba(155, 202, 232, 0.05);
+  padding: 1.25rem;
+  border-radius: var(--border-radius-sm);
+  position: relative;
+}
+
+.activity-tools-title {
+  position: absolute;
+  top: -12px; left: 15px;
+  background-color: var(--color-board-green);
+  padding: 0 8px;
+  font-family: var(--font-ui-label);
+  font-size: 0.95rem;
+  color: var(--color-chalk-blue);
+}
+
+.activity-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.activity-tool-chip {
+  border: 1.5px solid var(--color-chalk-blue);
+  color: var(--color-chalk-blue);
+  font-family: var(--font-board-handwriting);
+  font-size: 1.6rem;
+  padding: 2px 10px;
+  border-radius: 4px;
+  background: transparent;
+}

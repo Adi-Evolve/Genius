@@ -1,0 +1,59 @@
+/* Genius Design System Tokens */
+:root {
+  /* Color Palette - Chalk classroom aesthetic */
+  --color-board-green: #2f754b;
+  --color-board-dark: #1b3831;
+  --color-board-grid: rgba(245, 242, 232, 0.04);
+  
+  --color-chalk-white: #F5F2E8;
+  --color-chalk-yellow: #F5E642;
+  --color-chalk-blue: #9BCAE8;
+  --color-chalk-pink: #FFAAA6;
+  --color-chalk-green: #5FCB6A;
+  --color-chalk-orange: #FFB347;
+
+  --color-wood-dark: #895129;
+  --color-wood-medium: #895129;
+  --color-wood-light: #895129;
+  --color-wood-border: #6D3D1A;
+  
+  --color-ui-dark: #121212;
+  --color-ui-gray: #1E1E1E;
+  --color-ui-light: #F9F9F9;
+  
+  --color-speak-red: #E8504A;
+  --color-quiz-correct: #4CAF50;
+  --color-quiz-wrong: #F44336;
+  
+  /* Typography */
+  --font-board-handwriting: 'Caveat', 'Kalam', cursive;
+  --font-board-hindi: 'Tiro Devanagari Hindi', serif;
+  --font-ui-label: 'Patrick Hand', cursive;
+  --font-ui-body: 'Literata', serif;
+  --font-ui-sans: 'Outfit', sans-serif;
+  
+  /* Layout Sizing */
+  --sidebar-width: 260px;
+  --inforail-width: 200px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  
+  /* Borders - imperfect sketch effect */
+  --border-chalk: 2px dashed rgba(245, 242, 232, 0.4);
+  --border-chalk-solid: 2px solid rgba(245, 242, 232, 0.7);
+  --border-chalk-yellow: 2px dashed rgba(245, 230, 66, 0.6);
+  --border-wood: 4px solid var(--color-wood-border);
+  
+  /* Box Shadows */
+  --shadow-board-depth: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  --shadow-wood-depth: inset -10px 0 20px rgba(0,0,0,0.5), 5px 0 15px rgba(0,0,0,0.3);
+  --shadow-card-glow: 0 4px 20px rgba(245, 242, 232, 0.1);
+  --shadow-chalk-glow: 0 0 8px rgba(245, 242, 232, 0.3);
+  --shadow-yellow-glow: 0 0 8px rgba(245, 230, 66, 0.4);
+
+  /* Animation Durations */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.8s ease;
+}

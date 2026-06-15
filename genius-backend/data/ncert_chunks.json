@@ -1,0 +1,106 @@
+{
+  "photosynthesis": {
+    "text": "Photosynthesis is the process by which green plants, algae, and certain bacteria convert light energy, typically from the Sun, into chemical energy in the form of glucose. It takes place within the chloroplasts of plant cells, specifically in the green pigment called chlorophyll. The general chemical equation is 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2. Water is absorbed by roots from the soil, carbon dioxide is taken in from the air via stomatal pores, and oxygen is released as a byproduct.",
+    "source": "NCERT Class 9 Science, Chapter 6 (Life Processes)"
+  },
+  "atomic structure": {
+    "text": "An atom consists of a central, dense, positively charged nucleus surrounded by negatively charged electrons that orbit in discrete energy levels or shells. The nucleus contains protons (positive charge) and neutrons (neutral/no charge). The Bohr model describes electrons rotating in specific shells (K, L, M, N) without radiating energy. J.J. Thomson discovered electrons, Rutherford discovered the nucleus via the gold foil alpha-scattering experiment, and James Chadwick discovered the neutron.",
+    "source": "NCERT Class 9 Science, Chapter 4 (Structure of the Atom)"
+  },
+  "dna": {
+    "text": "Deoxyribonucleic acid (DNA) is the hereditary material in humans and almost all other organisms. In eukaryotic cells, DNA is located in the cell nucleus, packaged into thread-like structures called chromosomes. DNA molecules consist of two biopolymer strands coiled around each other to form a double helix. The structure consists of a sugar-phosphate backbone and nitrogenous bases: Adenine (A), Thymine (T), Guanine (G), and Cytosine (C), where A pairs with T, and G pairs with C via hydrogen bonds.",
+    "source": "NCERT Class 9 Science, Chapter 5 (The Fundamental Unit of Life)"
+  },
+  "current electricity": {
+    "text": "Electric current is defined as the rate of flow of electric charge (electrons) through a conductor. It is measured in Amperes (A). Voltage or potential difference is the work done to move a unit charge between two points, measured in Volts (V). Resistance is the property of a conductor to resist the flow of charges, measured in Ohms. Ohm's Law states that the current flowing through a conductor is directly proportional to the potential difference across its ends at constant temperature: V = IR.",
+    "source": "NCERT Class 9 Science, Chapter 12 (Electricity)"
+  },
+  "states of matter": {
+    "text": "Matter exists in three physical states: solid, liquid, and gas. These states arise due to variations in the intermolecular forces and distance between constituent particles. Solids have a fixed shape and volume with minimal particle spacing. Liquids have a fixed volume but adapt to the container's shape. Gases have neither fixed shape nor fixed volume, with particles moving freely. Phase transitions include melting (solid to liquid), boiling (liquid to gas), condensation (gas to liquid), and sublimation (solid directly to gas).",
+    "source": "NCERT Class 9 Science, Chapter 1 (Matter in Our Surroundings)"
+  },
+  "chemical reactions": {
+    "text": "A chemical reaction is a process in which one or more substances (reactants) are converted into one or more different substances (products). Chemical equations represent these reactions using symbols. Types of chemical reactions include combination reactions (two reactants form one product), decomposition reactions (one reactant breaks down), single displacement reactions, double displacement reactions, and redox (reduction-oxidation) reactions where transfer of electrons occurs.",
+    "source": "NCERT Class 10 Science, Chapter 1 (Chemical Reactions and Equations)"
+  },
+  "carbon compounds": {
+    "text": "Carbon is a versatile element that forms the basis of all organic molecules. It has a tetravalent nature (valence of 4) and displays catenation, which is the ability to form long chains with other carbon atoms via strong covalent bonds. Hydrocarbons are organic compounds containing only carbon and hydrogen, classified as saturated (alkanes, single bonds) and unsaturated (alkenes with double bonds, alkynes with triple bonds). Functional groups like alcohols, aldehydes, ketones, and carboxylic acids modify carbon compounds.",
+    "source": "NCERT Class 10 Science, Chapter 4 (Carbon and its Compounds)"
+  },
+  "light reflection": {
+    "text": "Reflection of light is the bouncing back of light rays when they hit a polished surface like a mirror. The laws of reflection state that the angle of incidence is equal to the angle of reflection, and the incident ray, reflected ray, and normal all lie in the same plane. Spherical mirrors are categorized as concave mirrors (converging mirrors, form real or virtual images depending on object distance) and convex mirrors (diverging mirrors, always form virtual, erect, and diminished images). The mirror formula is 1/f = 1/v + 1/u.",
+    "source": "NCERT Class 10 Science, Chapter 10 (Light - Reflection and Refraction)"
+  },
+  "human eye": {
+    "text": "The human eye is a sensory organ that uses a biological lens system to focus light onto the retina, which converts light into electrical signals sent to the brain. Common refractive defects of vision include myopia (nearsightedness, corrected using a concave lens), hypermetropia (farsightedness, corrected using a convex lens), and presbyopia (aging lens, corrected using bifocal lenses). Dispersion is the splitting of white light into its component colors (VIBGYOR) when passing through a glass prism.",
+    "source": "NCERT Class 10 Science, Chapter 11 (The Human Eye and the Colorful World)"
+  },
+  "our environment": {
+    "text": "An ecosystem consists of biotic (living) and abiotic (non-living) components interacting with each other. Energy flows unidirectionally through food chains and food webs from producers (autotrophs) to consumers (heterotrophs) and decomposers. According to the 10 percent law, only 10% of the energy is transferred from one trophic level to the next. Human activities affect the environment through ozone layer depletion by chlorofluorocarbons (CFCs) and the accumulation of non-biodegradable waste.",
+    "source": "NCERT Class 10 Science, Chapter 15 (Our Environment)"
+  },
+  "number systems": {
+    "text": "Numbers are classified into real numbers, which include rational numbers (expressible as p/q, where q is not zero, with terminating or repeating decimal expansions) and irrational numbers (non-terminating, non-repeating decimals, such as pi or square root of 2). Every real number corresponds to a unique point on the number line. The laws of exponents for real numbers define operations on base values raised to rational power components.",
+    "source": "NCERT Class 9 Mathematics, Chapter 1 (Number Systems)"
+  },
+  "polynomials": {
+    "text": "A polynomial is an algebraic expression consisting of variables and coefficients, involving only non-negative integer exponents. Polynomials are classified by degree: linear (degree 1), quadratic (degree 2), cubic (degree 3). The Remainder Theorem states that if a polynomial p(x) is divided by (x - a), the remainder is p(a). The Factor Theorem states that (x - a) is a factor of p(x) if and only if p(a) = 0. Quadratic polynomials can be factored using middle-term splitting.",
+    "source": "NCERT Class 9 Mathematics, Chapter 2 (Polynomials)"
+  },
+  "euclids geometry": {
+    "text": "Euclidean geometry is a mathematical system attributed to Alexandrian Greek mathematician Euclid. Euclid assumed a small set of intuitive axioms and postulates. His five postulates include: a straight line segment can be drawn joining any two points, any straight line segment can be extended indefinitely, a circle can be described with any center and radius, all right angles are equal, and the parallel postulate regarding intersecting lines.",
+    "source": "NCERT Class 9 Mathematics, Chapter 5 (Introduction to Euclid's Geometry)"
+  },
+  "triangles": {
+    "text": "Two triangles are congruent if their corresponding sides and angles are equal. Congruence rules include SAS (Side-Angle-Side), ASA (Angle-Side-Angle), AAS (Angle-Angle-Side), SSS (Side-Side-Side), and RHS (Right angle-Hypotenuse-Side). Properties of triangles state that angles opposite to equal sides of a triangle are equal, and the sum of any two sides of a triangle is greater than the third side. Similarity of triangles requires proportional sides and equal angles.",
+    "source": "NCERT Class 9 Mathematics, Chapter 7 (Triangles)"
+  },
+  "probability": {
+    "text": "Probability is the measure of the likelihood that an event will occur, calculated as the ratio of the number of favorable outcomes to the total number of equally likely outcomes in an experiment. The probability of an event E, denoted P(E), lies between 0 and 1 (inclusive). An event with probability 0 is impossible, while an event with probability 1 is certain. The sum of probabilities of all elementary events in a sample space is equal to 1.",
+    "source": "NCERT Class 9 Mathematics, Chapter 15 (Probability)"
+  },
+  "quadratic equations": {
+    "text": "A quadratic equation in the variable x is an equation of the form ax^2 + bx + c = 0, where a, b, and c are real numbers and a is not zero. The roots of a quadratic equation can be found using factorization, completing the square, or the quadratic formula: x = (-b +/- sqrt(b^2 - 4ac)) / 2a. The discriminant, D = b^2 - 4ac, determines the nature of the roots: two distinct real roots if D > 0, two equal real roots if D = 0, and no real roots if D < 0.",
+    "source": "NCERT Class 10 Mathematics, Chapter 4 (Quadratic Equations)"
+  },
+  "trigonometry": {
+    "text": "Trigonometry is the branch of mathematics studying relationships between the side lengths and angles of right-angled triangles. The trigonometric ratios of an acute angle in a right triangle are sine (opposite/hypotenuse), cosine (adjacent/hypotenuse), tangent (opposite/adjacent), cosecant, secant, and cotangent. Fundamental trigonometric identities include sin^2(theta) + cos^2(theta) = 1, 1 + tan^2(theta) = sec^2(theta), and 1 + cot^2(theta) = cosec^2(theta).",
+    "source": "NCERT Class 10 Mathematics, Chapter 8 (Introduction to Trigonometry)"
+  },
+  "arithmetic progressions": {
+    "text": "An Arithmetic Progression (AP) is a sequence of numbers in which the difference between consecutive terms is constant, known as the common difference (d). The nth term of an AP with first term 'a' and common difference 'd' is given by a_n = a + (n - 1)d. The sum of the first n terms of an AP is given by S_n = (n/2)[2a + (n - 1)d] or S_n = (n/2)[a + l], where 'l' represents the last term of the sequence.",
+    "source": "NCERT Class 10 Mathematics, Chapter 5 (Arithmetic Progressions)"
+  },
+  "circles": {
+    "text": "A circle is the collection of all points in a plane that are at a constant distance (radius) from a fixed point (center). A tangent to a circle is a line that intersects the circle at exactly one point. The tangent at any point of a circle is perpendicular to the radius through the point of contact. The lengths of tangents drawn from an external point to a circle are equal. A secant is a line that intersects a circle in two points.",
+    "source": "NCERT Class 10 Mathematics, Chapter 10 (Circles)"
+  },
+  "surface areas": {
+    "text": "Surface areas and volumes of combinations of solids are calculated by summing individual component geometries. Standard formulas include: Sphere (Surface Area = 4*pi*r^2, Volume = 4/3*pi*r^3), Cone (Curved Surface Area = pi*r*l, Volume = 1/3*pi*r^2*h), Cylinder (Curved Surface Area = 2*pi*r*h, Volume = pi*r^2*h), and Hemisphere (Curved Surface Area = 2*pi*r^2, Volume = 2/3*pi*r^3). Slant height of a cone is l = sqrt(r^2 + h^2).",
+    "source": "NCERT Class 10 Mathematics, Chapter 13 (Surface Areas and Volumes)"
+  },
+  "active passive voice": {
+    "text": "Active voice describes a sentence where the subject performs the action stated by the verb (e.g., 'The teacher explained the concept'). Passive voice describes a sentence where the subject is the recipient of the action (e.g., 'The concept was explained by the teacher'). To convert to passive, the object of the active verb becomes the subject of the passive verb, and the auxiliary verb 'to be' is combined with the past participle of the main verb.",
+    "source": "NCERT Class 9 English Grammar (Active and Passive Voice)"
+  },
+  "tenses & modals": {
+    "text": "Tenses indicate the time of action, categorized into Present, Past, and Future, each subdivided into Simple, Continuous, Perfect, and Perfect Continuous. Modals are auxiliary verbs expressing necessity, possibility, permission, or ability, including 'can' (ability/permission), 'could' (past ability), 'may' (possibility/formal permission), 'might' (weak possibility), 'must' (obligation/strong recommendation), 'should' (advice), and 'would' (past habit/request).",
+    "source": "NCERT Class 9 English Grammar (Tenses and Auxiliaries)"
+  },
+  "prepositions": {
+    "text": "Prepositions are words placed before a noun or pronoun to show its relationship (direction, time, place, location, spatial relationships) to another word in the sentence. Common prepositions include 'in' (inside a boundary), 'on' (touching a surface), 'at' (specific point), 'by' (proximity or agent), 'with' (accompaniment or instrument), 'through' (movement inside a three-dimensional space), and 'between' (comparing two distinct objects).",
+    "source": "NCERT Class 9 English Grammar (Prepositions)"
+  },
+  "reading comprehension": {
+    "text": "Reading comprehension is the ability to process text, understand its meaning, and integrate it with what the reader already knows. Key strategies for comprehension include skimming (reading rapidly for a general overview), scanning (searching for specific information), identifying the main idea, drawing logical inferences, understanding vocabulary in context, and noting structural details like transitions and supporting evidence.",
+    "source": "NCERT Class 9 English Reading Skills"
+  },
+  "subject verb concord": {
+    "text": "Subject-verb concord (or agreement) states that a singular subject takes a singular verb (e.g., 'The student walks') and a plural subject takes a plural verb (e.g., 'The students walk'). Complex rules state: subjects joined by 'and' take a plural verb; collective nouns take singular verbs when acting as a single unit; subjects joined by 'either...or' or 'neither...nor' agree with the closer subject; and 'each', 'every', 'someone' take singular verbs.",
+    "source": "NCERT Class 10 English Grammar (Subject-Verb Agreement)"
+  },
+  "reported speech": {
+    "text": "Reported speech (indirect speech) expresses what someone said without quoting their exact words. When changing direct speech to indirect speech, pronouns change to reflect the reporter's perspective; reporting verbs like 'say' or 'tell' are introduced; tenses shift back (present simple becomes past simple, past simple becomes past perfect); and time/place adverbs change (e.g., 'now' becomes 'then', 'here' becomes 'there', 'today' becomes 'that day').",
+    "source": "NCERT Class 10 English Grammar (Reported/Indirect Speech)"
+  }
+}

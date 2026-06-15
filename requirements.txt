@@ -1,0 +1,14 @@
+streamlit>=1.41.0
+groq>=0.4.0
+edge-tts>=6.1.9
+langchain>=0.1.0
+langchain-community>=0.0.10
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+watchdog>=3.0.0
+python-dotenv>=1.0.0
+pydub>=0.25.1
+aiofiles>=23.2.1
+plotly>=5.18.0
+pypdf>=4.0.0
+requests>=2.31.0

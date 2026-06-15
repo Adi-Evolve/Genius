@@ -1,0 +1,193 @@
+/* Genius Classroom Layout Grid */
+
+/* Hide Streamlit default styling elements to allow custom layout */
+header, footer, [data-testid="stHeader"], [data-testid="stFooter"], [data-testid="stToolbar"], [data-testid="collapsedControl"] {
+  visibility: hidden !important;
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Reset default Streamlit page margins and paddings */
+.main .block-container, [data-testid="stAppViewContainer"] {
+  padding: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+/* Custom Grid System for classroom view */
+.classroom-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-board-green);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.board-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.info-rail {
+  width: var(--inforail-width);
+  height: 100vh;
+  background-color: var(--color-board-dark);
+  border-left: var(--border-chalk);
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-chalk-white);
+  z-index: 5;
+}
+
+/* Layout Utilities */
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.scrollable-y {
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .info-rail {
+    display: none; /* Hide info rail on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Sidebar collapses on mobile */
+  }
+}
+
+/* Smart Board (displays above 1400px) large text optimization */
+@media (min-width: 1400px) {
+  :root {
+    --fs-board-xl: 3.5rem;    /* larger board titles */
+    --fs-board-lg: 2.2rem;    /* larger subheadings */
+    --fs-board-md: 1.6rem;    /* larger explanation body text */
+    --fs-board-sm: 1.2rem;    /* larger labels */
+  }
+  .chalk-text {
+    font-size: 2.6rem !important; /* Make sure handwriting reads easily from the back of the classroom */
+  }
+  .chalk-text-hindi {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* --- Streamlit Platform Root Overrides --- */
+
+/* Classroom green board background on Streamlit main content frame with CSS noise fallback */
+[data-testid="stAppViewContainer"], .main, .block-container {
+  background-color: var(--color-board-green) !important;
+  background-image: 
+    radial-gradient(circle, rgba(42,92,27,0.3) 0%, rgba(26,48,14,0.65) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E"),
+    url('../assets/board_texture.jpg') !important;
+  background-size: 100% 100%, 250px 250px, 512px 512px !important;
+  background-blend-mode: overlay, normal, normal !important;
+  color: var(--color-chalk-white) !important;
+  box-shadow: var(--shadow-board-depth) !important;
+}
+
+/* Worn wood grain background on Streamlit sidebar container with vertical plank fallback */
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
+  background-color: #895129 !important;
+  background-image: none !important;
+  border-right: 4px solid var(--color-wood-border) !important;
+  box-shadow: inset -3px 0 10px rgba(0,0,0,0.15) !important;
+}
+
+/* Style default Streamlit buttons inside sidebar to match wood rack items */
+[data-testid="stSidebar"] button {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  padding: 0.75rem 1.25rem !important;
+  font-family: var(--font-ui-label) !important;
+  font-size: 1.15rem !important;
+  color: #F5E6C8 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-left: 4px solid transparent !important;
+  border-radius: 0 4px 4px 0 !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4) !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  transition: all var(--transition-fast) !important;
+}
+
+[data-testid="stSidebar"] button:hover {
+  background-color: rgba(212, 169, 106, 0.12) !important;
+  color: var(--color-chalk-white) !important;
+  padding-left: 1.5rem !important;
+}
+
+[data-testid="stSidebar"] button:active, [data-testid="stSidebar"] button:focus {
+  background-color: rgba(212, 169, 106, 0.22) !important;
+  border-left-color: var(--color-chalk-yellow) !important;
+  color: var(--color-chalk-yellow) !important;
+  box-shadow: inset 5px 0 10px rgba(0,0,0,0.3) !important;
+}
+
+/* Native Streamlit Container Mappings */
+
+/* Slide up panels styled via native containers */
+.st-key-slide_up_panel,
+.st-key-slide_up_panel_completion,
+.st-key-slide_up_panel_summary {
+  margin: 0 auto !important;
+  background: rgba(26, 48, 14, 0.7) !important;
+  border: var(--border-chalk-solid) !important;
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-board-depth) !important;
+  color: var(--color-chalk-white) !important;
+  animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.st-key-slide_up_panel {
+  max-width: 500px !important;
+  padding: 2rem !important;
+}
+
+.st-key-slide_up_panel_completion {
+  max-width: 600px !important;
+  padding: 2.5rem !important;
+  background: rgba(26, 48, 14, 0.6) !important;
+}
+
+.st-key-slide_up_panel_summary {
+  max-width: 650px !important;
+  padding: 2rem !important;
+}
+
+/* Hidden container override */
+.st-key-hidden_audio_input_container {
+  display: none !important;
+}
+

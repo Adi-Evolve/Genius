@@ -1,0 +1,189 @@
+/* Quiz Mode Styles */
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed rgba(245, 242, 232, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.quiz-title {
+  font-family: var(--font-board-handwriting);
+  font-size: 2.4rem;
+  color: var(--color-chalk-yellow);
+  margin: 0;
+  text-shadow: var(--shadow-yellow-glow);
+}
+
+.quiz-question-text {
+  font-family: var(--font-board-handwriting);
+  font-size: 2.2rem;
+  color: var(--color-chalk-white);
+  line-height: 1.5;
+  margin: 1rem 0;
+  text-shadow: var(--shadow-chalk-glow);
+}
+
+/* 2x2 Quiz Cards Grid */
+.quiz-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .quiz-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quiz-option-card {
+  border: 2px dashed rgba(245, 242, 232, 0.4);
+  background: rgba(245, 242, 232, 0.02);
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  cursor: pointer;
+  font-family: var(--font-board-handwriting);
+  font-size: 1.8rem;
+  color: var(--color-chalk-white);
+  border-radius: 4px;
+  position: relative;
+  transition: all var(--transition-fast);
+  text-align: left;
+  box-shadow: var(--shadow-card-glow);
+}
+
+/* Option Label (A, B, C, D) in the top-left corner */
+.quiz-option-card::before {
+  content: attr(data-label);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-family: var(--font-ui-label);
+  font-size: 0.9rem;
+  color: var(--color-chalk-orange);
+  opacity: 0.8;
+}
+
+.quiz-option-card:hover {
+  background: rgba(245, 242, 232, 0.08);
+  border-color: var(--color-chalk-white);
+  transform: translateY(-2px);
+}
+
+/* Answer Highlight States */
+.quiz-option-card.correct {
+  border-color: var(--color-chalk-green) !important;
+  background: rgba(95, 203, 106, 0.12) !important;
+  color: var(--color-chalk-green) !important;
+  animation: correct-glow-pulse 0.5s ease;
+  box-shadow: 0 0 15px rgba(95, 203, 106, 0.3) !important;
+}
+
+.quiz-option-card.wrong {
+  border-color: var(--color-speak-red) !important;
+  background: rgba(232, 80, 74, 0.1) !important;
+  color: var(--color-speak-red) !important;
+  animation: shake-error 0.3s ease;
+  box-shadow: 0 0 15px rgba(232, 80, 74, 0.2) !important;
+}
+
+.quiz-option-card.dimmed {
+  opacity: 0.3;
+  filter: grayscale(80%);
+}
+
+/* Quiz Timer */
+.quiz-timer-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quiz-timer-text {
+  font-family: var(--font-board-handwriting);
+  font-size: 2.2rem;
+  color: var(--color-chalk-orange);
+}
+
+.quiz-timer-text.urgent {
+  color: var(--color-speak-red);
+  animation: timer-flash 0.5s infinite alternate;
+}
+
+/* Live Scoreboard / Class Response Meter */
+.class-meter-box, .st-key-class_meter_box {
+  border: 2px dashed rgba(245, 242, 232, 0.2);
+  background: rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: var(--border-radius-sm);
+  margin-top: 1.5rem;
+}
+
+.class-meter-title {
+  font-family: var(--font-ui-label);
+  font-size: 0.95rem;
+  color: var(--color-chalk-white);
+  opacity: 0.8;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meter-track {
+  height: 14px;
+  background: rgba(245, 242, 232, 0.1);
+  border: 1px solid rgba(245, 242, 232, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.meter-fill {
+  height: 100%;
+  transition: width 0.6s cubic-bezier(0.1, 0.8, 0.2, 1);
+}
+
+.meter-fill.correct {
+  background-color: var(--color-chalk-green);
+}
+
+.meter-fill.wrong {
+  background-color: var(--color-speak-red);
+}
+
+.meter-fill.blank {
+  background-color: var(--color-chalk-white);
+  opacity: 0.25;
+}
+
+.meter-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-ui-label);
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.legend-color {
+  width: 10px; height: 10px;
+  border-radius: 2px;
+}
+
+.legend-color.correct { background: var(--color-chalk-green); }
+.legend-color.wrong { background: var(--color-speak-red); }
+.legend-color.blank { background: var(--color-chalk-white); opacity: 0.5; }
