@@ -1,0 +1,15 @@
+# Exclude Python runtime entry points from Vercel's auto-detection
+app.py
+requirements.txt
+genius-backend/
+
+# Exclude all python source files
+**/*.py
+**/__pycache__/
+*.pyc
+
+# Exclude dev files
+devwatch.py
+start_dev.bat
+data/
+scripts/
