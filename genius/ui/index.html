@@ -3179,6 +3179,12 @@
       
       // Start session elapsed timer
       setInterval(updateSessionTimer, 1000);
+      
+      // Pre-warm / ping Render backend to wake it up immediately from cold-start
+      if (state.apiUrl) {
+        console.log("[Genius] Pre-warming backend at:", state.apiUrl);
+        fetch(state.apiUrl).catch(err => console.warn("[Genius] Warmup ping failed:", err));
+      }
     };
 
     // Load configurations from localStorage
